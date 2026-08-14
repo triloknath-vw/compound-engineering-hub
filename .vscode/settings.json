@@ -1,0 +1,18 @@
+{
+  // Discover custom agents from both the VS Code default location and this
+  // repo's top-level agents/ folder (see agents/README.md).
+  "chat.agentFilesLocations": {
+    ".github/agents": true,
+    "agents": true
+  },
+  // Discover prompt files from both the VS Code default location and this
+  // repo's top-level prompts/ folder (see prompts/README.md).
+  "chat.promptFilesLocations": {
+    ".github/prompts": true,
+    "prompts": true
+  },
+  // Instructions stay at the VS Code default location.
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true
+  }
+}

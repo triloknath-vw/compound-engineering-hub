@@ -216,3 +216,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# MkDocs
+site/
+
+# Editors
+.DS_Store
+*.swp
+
+# Node (in case future plugins/tools need it)
+node_modules/
+
+# Local secrets
+.env
+.env.local

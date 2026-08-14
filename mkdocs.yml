@@ -1,0 +1,28 @@
+site_name: Compound Engineering Hub
+site_description: Reusable GitHub Copilot agents, prompts, instructions, skills, and plugins.
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Agents: agents.md
+  - Prompts: prompts.md
+  - Instructions: instructions.md
+  - Skills: skills.md
+  - Plugins: plugins.md
+  - Marketplace: marketplace.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: ["."]

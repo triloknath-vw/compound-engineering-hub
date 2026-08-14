@@ -1,0 +1,12 @@
+{
+  "name": "compound-engineering-hub",
+  "owner": {
+    "name": "<team-name>",
+    "email": "<team-distribution-list>"
+  },
+  "metadata": {
+    "description": "Curated Copilot CLI plugins maintained by <org/team>.",
+    "version": "0.1.0"
+  },
+  "plugins": []
+}

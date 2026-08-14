@@ -1,0 +1,23 @@
+name: Validate Customizations
+
+on:
+  pull_request:
+    paths:
+      - "agents/**"
+      - "prompts/**"
+      - "skills/**"
+      - "plugins/**"
+      - ".github/instructions/**"
+      - ".github/plugin/marketplace.json"
+  workflow_dispatch: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate frontmatter and plugin manifests
+        run: python scripts/validate_structure.py
