@@ -4,9 +4,10 @@ A comprehensive repository of reusable GitHub Copilot configurations — special
 agents, workflow prompts, custom instructions, agent skills, and installable
 plugins — designed to standardize AI-assisted development across teams.
 
-This is a **skeleton**: every category below is wired up and ready to use, but
-intentionally ships without example content. Copy a template, fill it in, and
-commit.
+This started as a **skeleton**: every category below is wired up and ready to
+use. `agents/`, `prompts/`, and `skills/` now have real examples to use as a
+reference; `.github/instructions/` and `plugins/` still ship template-only
+until a real one is added.
 
 ## What this hub provides
 
@@ -60,12 +61,15 @@ compound-engineering-hub/
 ## Getting started
 
 1. Pick the category that matches your need (see table above).
-2. Copy the template in that folder (`templates/*.template.md`, or
-   `_template-skill/`, or `plugins/_template-plugin/`).
-3. Rename and fill it in — each template's comments explain every field.
-4. Open a pull request. CI validates required frontmatter automatically
+2. For agents, prompts, or skills: use an existing file in that folder as a
+   reference for structure and frontmatter. For instructions or plugins: copy
+   the `templates/*.template.md` (or `_template-plugin/`) starter.
+3. Rename and fill it in.
+4. Run `python scripts/generate_catalog.py` so `docs/*.md` and
+   [`MARKETPLACE.md`](MARKETPLACE.md) list it (CI fails if you forget).
+5. Open a pull request. CI validates required frontmatter automatically
    (see [`.github/workflows/validate-customizations.yml`](.github/workflows/validate-customizations.yml)).
-5. If it should be installable elsewhere, add an entry to
+6. If it should be installable elsewhere, add an entry to
    [`.github/plugin/marketplace.json`](.github/plugin/marketplace.json).
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for full conventions, and

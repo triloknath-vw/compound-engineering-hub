@@ -30,6 +30,7 @@ copilot plugin install ./plugins/<plugin-name>
 
 ## Contributing something new
 
-See [Contributing](contributing.md) for the full checklist. In short: copy the
-template in the relevant folder, fill it in, add a row to `MARKETPLACE.md`,
-open a PR.
+See [Contributing](contributing.md) for the full checklist. In short: use an
+existing file as a reference (agents/prompts/skills) or copy the template
+(instructions/plugins), fill it in, run `python scripts/generate_catalog.py`
+so `docs/*.md` and `MARKETPLACE.md` list it, then open a PR.

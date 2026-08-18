@@ -9,6 +9,8 @@ on:
       - "plugins/**"
       - ".github/instructions/**"
       - ".github/plugin/marketplace.json"
+      - "docs/**"
+      - "MARKETPLACE.md"
   workflow_dispatch: {}
 
 jobs:
@@ -21,3 +23,5 @@ jobs:
           python-version: "3.12"
       - name: Validate frontmatter and plugin manifests
         run: python scripts/validate_structure.py
+      - name: Check docs/MARKETPLACE.md catalog is up to date
+        run: python scripts/generate_catalog.py --check

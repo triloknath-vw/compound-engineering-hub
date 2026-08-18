@@ -16,13 +16,12 @@ skills/<skill-name>/
 
 ## Adding a new skill
 
-1. Copy the [`_template-skill/`](_template-skill/) folder.
-2. Rename the folder to `<kebab-case-skill-name>/`.
-3. In `SKILL.md`, set `name` to match the new folder name exactly, write a
-   keyword-rich `description`, remove `user-invocable: false` /
-   `disable-model-invocation: true` (those two lines only keep the *template*
-   inert), and replace the body with real step-by-step procedures.
-4. Add a row to [`../MARKETPLACE.md`](../MARKETPLACE.md).
+1. Create a `<kebab-case-skill-name>/` folder with a `SKILL.md` inside — use
+   [`readme-blueprint-generator/SKILL.md`](readme-blueprint-generator/SKILL.md)
+   as a reference for structure and frontmatter.
+2. Set `name` to match the folder name exactly, and write a keyword-rich
+   `description`.
+3. Add a row to [`../MARKETPLACE.md`](../MARKETPLACE.md).
 
 ## Packaging a skill for distribution
 

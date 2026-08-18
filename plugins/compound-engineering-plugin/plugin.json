@@ -1,0 +1,13 @@
+{
+  "name": "compound-engineering-plugin",
+  "description": "Curated Copilot CLI plugins maintained by Trilok. This plugin is a collection of useful tools and utilities for developers, engineers, and DevOps professionals.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Trilok Nath",
+    "email": "trilok.nath@vwgds.in"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "agents": "agents/",
+  "skills": "skills/"
+}

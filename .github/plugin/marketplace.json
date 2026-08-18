@@ -1,12 +1,19 @@
 {
   "name": "compound-engineering-hub",
   "owner": {
-    "name": "<team-name>",
-    "email": "<team-distribution-list>"
+    "name": "Trilok Nath",
+    "email": "trilok.nath@vwgds.in"
   },
   "metadata": {
-    "description": "Curated Copilot CLI plugins maintained by <org/team>.",
+    "description": "Curated Copilot CLI plugins maintained by Trilok. This plugin is a collection of useful tools and utilities for developers, engineers, and DevOps professionals.",
     "version": "0.1.0"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "compound-engineering-plugin",
+      "description": "Curated Copilot CLI plugins maintained by Trilok. This plugin is a collection of useful tools and utilities for developers, engineers, and DevOps professionals.",
+      "version": "1.0.0",
+      "source": "../../plugins/compound-engineering-plugin"
+    }
+  ]
 }

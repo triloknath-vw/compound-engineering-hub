@@ -6,11 +6,12 @@ in this workspace (discovered via `chat.promptFilesLocations` in
 
 ## Adding a new prompt
 
-1. Copy [`templates/prompt.template.md`](templates/prompt.template.md).
-2. Rename to `<kebab-case-name>.prompt.md` and drop it directly in this folder.
-3. Fill in `description` and the task body. Keep it to **one** well-defined task
+1. Create `<kebab-case-name>.prompt.md` directly in this folder — use
+   [`minutes-of-meeting.prompt.md`](minutes-of-meeting.prompt.md) as a
+   reference for structure and frontmatter.
+2. Fill in `description` and the task body. Keep it to **one** well-defined task
    — don't chain "generate and test and deploy" into a single prompt.
-4. Add a row to [`../MARKETPLACE.md`](../MARKETPLACE.md).
+3. Add a row to [`../MARKETPLACE.md`](../MARKETPLACE.md).
 
 ## When to use a prompt vs. an agent vs. a skill
 

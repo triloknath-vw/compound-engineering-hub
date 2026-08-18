@@ -29,7 +29,7 @@ environments.
 
 ## Adding a new plugin
 
-1. Copy [`_template-plugin/`](_template-plugin/) to `plugins/<kebab-case-name>/`.
+1. Copy [`compound-engineering-plugin/`](compound-engineering-plugin/) to `plugins/<kebab-case-name>/`.
 2. Fill in `plugin.json` (`name`, `description`, `version`, `author`, `license`, `keywords`).
 3. Add real `agents/*.agent.md` and/or `skills/<name>/SKILL.md` inside the plugin folder.
 4. Add a `.mcp.json` only if genuinely needed — see the security guidance in

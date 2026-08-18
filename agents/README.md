@@ -6,12 +6,13 @@ directly in this workspace (discovered via `chat.agentFilesLocations` in
 
 ## Adding a new agent
 
-1. Copy [`templates/agent.template.md`](templates/agent.template.md).
-2. Rename to `<kebab-case-name>.agent.md` and drop it directly in this folder.
-3. Fill in `description` (keyword-rich — this is how the agent picker and
+1. Create `<kebab-case-name>.agent.md` directly in this folder — use
+   [`mom.agent.md`](mom.agent.md) or [`planner.agent.md`](planner.agent.md) as a
+   reference for structure and frontmatter.
+2. Fill in `description` (keyword-rich — this is how the agent picker and
    subagent delegation find it), `tools` (minimal set needed), and the body
    persona/constraints/approach.
-4. Add a row to [`../MARKETPLACE.md`](../MARKETPLACE.md).
+3. Add a row to [`../MARKETPLACE.md`](../MARKETPLACE.md).
 
 ## When to use an agent vs. a prompt vs. a skill
 

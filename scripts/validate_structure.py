@@ -9,28 +9,7 @@ import json
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-
-
-def is_template_path(path: Path) -> bool:
-    return any(part == "templates" or part.startswith("_template") for part in path.parts)
-
-
-def parse_frontmatter(text: str) -> dict[str, str] | None:
-    """Minimal parser for simple `key: value` YAML frontmatter (no nesting)."""
-    if not text.startswith("---"):
-        return None
-    end = text.find("\n---", 3)
-    if end == -1:
-        return None
-    block = text[3:end].strip("\n")
-    fields: dict[str, str] = {}
-    for line in block.splitlines():
-        if ":" not in line or line.strip().startswith("#"):
-            continue
-        key, _, value = line.partition(":")
-        fields[key.strip()] = value.strip().strip("'\"")
-    return fields
+from _catalog import REPO_ROOT, is_template_path, parse_frontmatter
 
 
 def check_markdown_files(folder: Path, suffix: str, required: tuple[str, ...]) -> list[str]:

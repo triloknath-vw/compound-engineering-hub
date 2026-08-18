@@ -27,3 +27,12 @@ copilot plugin install <plugin-name>@compound-engineering-hub
 | `agents` / `skills` | Recommended | Relative paths to the bundled content |
 
 See [Marketplace](marketplace.md) for how plugins get registered and discovered.
+
+## Catalog
+
+> Generated from `plugins/*/plugin.json` by `scripts/generate_catalog.py` — do
+> not edit by hand, run the script instead.
+
+<!-- CATALOG:PLUGINS:START -->
+_None yet — see [Contributing](contributing.md) for how to add one._
+<!-- CATALOG:PLUGINS:END -->
